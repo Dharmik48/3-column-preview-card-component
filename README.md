@@ -25,9 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Project incomplete
+![](./screenshots/desktop)
+![](./screenshots/mobile)
 
 ### Links
 
@@ -45,19 +44,29 @@ Project incomplete
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+The :nth-child property is awesome!! It helps in reducing unnecessary class in HTML.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+.card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.card:nth-child(3) {
+  background-color: var(--very-dark-cyan);
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+The :nth-child is real handy so definitly be using in future works.
+
+```css
+element:nth-child(n) {
+  property: value;
+}
+```
 
 ## Author
 
