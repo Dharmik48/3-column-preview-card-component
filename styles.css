@@ -73,6 +73,7 @@ body {
 .card .btn {
   height: min-content;
   padding: 1em 2em;
+  margin-top: 2em;
   background-color: var(--very-light-gray);
   border: 2px solid var(--very-light-gray);
   border-radius: 2em;
