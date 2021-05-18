@@ -81,6 +81,7 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+/* Colorfull section 🔴🟢🔵 */
 .card:nth-child(1) {
   background-color: var(--bright-orange);
 }
@@ -107,6 +108,7 @@ body {
   background-color: transparent;
 }
 
+/* RESPONSIVE media quries here */
 @media screen and (min-width: 1025px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
