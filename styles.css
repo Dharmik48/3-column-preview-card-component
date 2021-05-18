@@ -18,10 +18,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
 body {
   min-height: 100vh;
   width: 100%;
-  padding: 1em;
   background-color: var(--very-light-gray);
   color: var(--transparent-white);
   font-family: 'Lexend Deca', sans-serif;
@@ -34,26 +39,85 @@ body {
 .cards {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  margin: 4em 1.5em;
   border-radius: 1em;
   overflow: hidden;
 }
 
 .card {
-  padding: 2em;
+  height: 27em;
+  width: clamp(18.75em, 18.75em, 20em);
+  padding: 3em;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h1 {
   font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.card img {
+  width: clamp(3em, 4em, 5em);
+  height: auto;
+}
+
+.card .btn {
+  padding: 1em 2em;
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  border-radius: 2em;
+  width: max-content;
+  transition: all 300ms ease-in-out;
 }
 
 .card:nth-child(1) {
   background-color: var(--bright-orange);
 }
+.card:nth-child(1) .btn {
+  color: var(--bright-orange);
+}
 .card:nth-child(2) {
   background-color: var(--dark-cyan);
 }
+.card:nth-child(2) .btn {
+  color: var(--dark-cyan);
+}
 .card:nth-child(3) {
   background-color: var(--very-dark-cyan);
+}
+.card:nth-child(3) .btn {
+  color: var(--very-dark-cyan);
+}
+
+.card .btn:hover,
+.card .btn:active {
+  border: 2px solid var(--very-light-gray);
+  color: var(--very-light-gray);
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1025px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    margin: 0 10em;
+  }
+
+  .card {
+    height: 30em;
+    width: 20em;
+  }
+
+  .card .btn {
+    margin-top: 3em;
+  }
 }
