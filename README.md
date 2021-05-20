@@ -30,6 +30,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-TEqL8SnOh](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-TEqL8SnOh)
 - Live Site URL: [https://dharmik48.github.io/3-column-preview-card-component/](https://dharmik48.github.io/3-column-preview-card-component/)
 
 ## My process
